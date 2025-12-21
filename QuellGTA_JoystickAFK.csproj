@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyTitle></AssemblyTitle>
-    <ApplicationIcon>ps4-controller_icon-icons.com_55301 (1).ico</ApplicationIcon>
+    <ApplicationIcon>controller_icon.ico</ApplicationIcon>
     <Title>QuellGTA_JoystickAFK</Title>
     <Authors>MageAngela</Authors>
     <Company>MageAngela</Company>
@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="ps4-controller_icon-icons.com_55301 (1).ico" />
+    <Content Include="controller_icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
