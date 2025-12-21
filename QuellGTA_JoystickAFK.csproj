@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyTitle></AssemblyTitle>
+    <ApplicationIcon>ps4-controller_icon-icons.com_55301 (1).ico</ApplicationIcon>
+    <Title>QuellGTA_JoystickAFK</Title>
+    <Authors>MageAngela</Authors>
+    <Company>MageAngela</Company>
+    <Copyright>MageAngela.cn</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="ps4-controller_icon-icons.com_55301 (1).ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nefarius.ViGEm.Client" Version="1.21.256" />
+  </ItemGroup>
+
+</Project>
