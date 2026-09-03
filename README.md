@@ -1,4 +1,4 @@
-# QuellGTA StickSim
+# QuellGTA_JoystickSim
 
 一个基于 ViGEm 的虚拟手柄摇杆控制工具，支持 Xbox 360 和 PS4 虚拟手柄，通过命令行控制摇杆方向与力度。
 
