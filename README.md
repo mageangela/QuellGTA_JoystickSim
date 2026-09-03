@@ -128,10 +128,6 @@ taskkill /f /im StickSim.exe
 2. 尝试重启服务
 3. 在 Windows 游戏控制器中检查虚拟手柄是否出现
 
-## 📄 许可证
-
-MIT License
-
 ---
 
 **Happy Simulating!** 🎮
