@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "QuellGTA_JoystickSim": {
+      "commandName": "Project",
+      "commandLineArgs": "-start"
+    }
+  }
+}
