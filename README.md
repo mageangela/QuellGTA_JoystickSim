@@ -34,35 +34,35 @@ winget install ViGEm.ViGEmBus
 
 ```bash
 # 默认使用 Xbox 手柄
-StickSim.exe -start
+JoystickSim.exe -start
 
 # 或指定 PS4 手柄
-StickSim.exe -start ps4
+JoystickSim.exe -start ps4
 
 # 指定 Xbox 手柄
-StickSim.exe -start xbox
+JoystickSim.exe -start xbox
 ```
 
 ### 3. 控制摇杆
 
 ```bash
 # 向上推杆，强度 200
-StickSim.exe -push up 200
+JoystickSim.exe -push up 200
 
 # 向左半推
-StickSim.exe -push left 128
+JoystickSim.exe -push left 128
 
 # 推右上角，最大力度
-StickSim.exe -push upright 255
+JoystickSim.exe -push upright 255
 
 # 摇杆归中（释放）
-StickSim.exe -center
+JoystickSim.exe -center
 
 # 查看当前状态
-StickSim.exe -status
+JoystickSim.exe -status
 
 # 停止服务
-StickSim.exe -stop
+JoystickSim.exe -stop
 ```
 
 ## 📖 命令参考
@@ -117,10 +117,10 @@ StickSim.exe -stop
 ### 服务无法启动
 ```bash
 # 检查是否已有服务在运行
-StickSim.exe -status
+JoystickSim.exe -status
 
 # 如果卡住了，强制结束进程
-taskkill /f /im StickSim.exe
+taskkill /f /im JoystickSim.exe
 ```
 
 ### 游戏检测不到手柄
