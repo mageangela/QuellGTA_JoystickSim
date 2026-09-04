@@ -6,7 +6,7 @@ using System.IO.Pipes;
 
 class Program
 {
-    private const string PipeName = "QuellGTA_StickSim_Pipe";
+    private const string PipeName = "QuellGTA_JoystickSim_Pipe";
     private static ViGEmClient? _client;
     private static IDualShock4Controller? _ds4;
     private static IXbox360Controller? _xbox;
@@ -49,7 +49,7 @@ class Program
             case "-push":
                 if (args.Length < 3)
                 {
-                    Console.WriteLine("用法: StickSim.exe -push <方向> <强度>");
+                    Console.WriteLine("用法: JoystickSim.exe -push <方向> <强度>");
                     Console.WriteLine("  方向: left, right, up, down, upleft, upright, downleft, downright");
                     Console.WriteLine("  强度: 0-255");
                     return;
@@ -309,7 +309,7 @@ class Program
         }
         catch (TimeoutException)
         {
-            Console.WriteLine("错误: 服务未运行或超时，请先执行 StickSim.exe -start");
+            Console.WriteLine("错误: 服务未运行或超时，请先执行 JoystickSim.exe -start");
         }
         catch (Exception ex)
         {
@@ -322,25 +322,25 @@ class Program
         Console.WriteLine("QuellGTA 手柄摇杆控制服务");
         Console.WriteLine("================================");
         Console.WriteLine("启动服务 (首次运行):");
-        Console.WriteLine("  StickSim.exe -start            # 默认 Xbox 手柄");
-        Console.WriteLine("  StickSim.exe -start xbox       # Xbox 手柄");
-        Console.WriteLine("  StickSim.exe -start ps4        # PS4 手柄");
+        Console.WriteLine("  JoystickSim.exe -start            # 默认 Xbox 手柄");
+        Console.WriteLine("  JoystickSim.exe -start xbox       # Xbox 手柄");
+        Console.WriteLine("  JoystickSim.exe -start ps4        # PS4 手柄");
         Console.WriteLine();
         Console.WriteLine("控制命令 (服务运行后):");
-        Console.WriteLine("  StickSim.exe -push <方向> <强度>   # 推杆");
-        Console.WriteLine("  StickSim.exe -center               # 归中");
-        Console.WriteLine("  StickSim.exe -status               # 查看状态");
-        Console.WriteLine("  StickSim.exe -stop                 # 停止服务");
+        Console.WriteLine("  JoystickSim.exe -push <方向> <强度>   # 推杆");
+        Console.WriteLine("  JoystickSim.exe -center               # 归中");
+        Console.WriteLine("  JoystickSim.exe -status               # 查看状态");
+        Console.WriteLine("  JoystickSim.exe -stop                 # 停止服务");
         Console.WriteLine();
         Console.WriteLine("方向: left, right, up, down, upleft, upright, downleft, downright");
         Console.WriteLine("强度: 0-255");
         Console.WriteLine();
         Console.WriteLine("示例:");
-        Console.WriteLine("  StickSim.exe -start ps4           # 启动PS4手柄服务");
-        Console.WriteLine("  StickSim.exe -start xbox          # 启动Xbox手柄服务");
-        Console.WriteLine("  StickSim.exe -push up 200         # 向上推200强度");
-        Console.WriteLine("  StickSim.exe -push left 128       # 向左半推");
-        Console.WriteLine("  StickSim.exe -center              # 归中");
-        Console.WriteLine("  StickSim.exe -stop                # 停止服务");
+        Console.WriteLine("  JoystickSim.exe -start ps4           # 启动PS4手柄服务");
+        Console.WriteLine("  JoystickSim.exe -start xbox          # 启动Xbox手柄服务");
+        Console.WriteLine("  JoystickSim.exe -push up 200         # 向上推200强度");
+        Console.WriteLine("  JoystickSim.exe -push left 128       # 向左半推");
+        Console.WriteLine("  JoystickSim.exe -center              # 归中");
+        Console.WriteLine("  JoystickSim.exe -stop                # 停止服务");
     }
 }
